@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iloveyou</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Brush+Script+MT&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="bg-music" loop>
+        <source src="Billie Eilish - BIRDS OF A FEATHER (Official Lyric Video).mp3" type="audio/mpeg">
+       
+    </audio>
+
+    <div class="container">
+        <h1 class="title">Hi Langga!</h1>
+        <div class="collage">
+            <img src="Images/pic1.jpg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic2.jpg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic3.jpg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic4.jpeg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic5.jpeg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic6.jpeg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic7.jpeg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic8.jpeg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic10.jpeg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic11.jpeg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic12.jpeg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic13.jpeg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic14.jpeg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic15.jpg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic16.jpeg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic17.jpeg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic18.jpeg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic19.jpeg" alt="Your Partner" class="collage-image">
+            <img src="Images/pic20.jpeg" alt="Your Partner" class="collage-image">
+        </div>
+        <div class="music-controls">
+            <button id="play-button" class="love-button">Play Music</button>
+        </div>
+        <div class="footer">
+            <button class="love-button">I Love You </button>
+        </div>
+    </div>
+
+    <script>
+        const playButton = document.getElementById('play-button');
+        const bgMusic = document.getElementById('bg-music');
+
+        playButton.addEventListener('click', () => {
+            if (bgMusic.paused) {
+                bgMusic.play();
+                playButton.textContent = "Pause Music";
+            } else {
+                bgMusic.pause();
+                playButton.textContent = "Play Music";
+            }
+        });
+    </script>
+</body>
+</html>
